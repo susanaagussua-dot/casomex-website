@@ -5,14 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CASOMEX – Capital Social Mexicano</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Merriweather:wght@300;700&display=swap" rel="stylesheet" />
-    
     <style>
       body {
         font-family: 'Inter', sans-serif;
         margin: 0;
         background: #f3f1eb;
       }
-
       header {
         display: flex;
         align-items: center;
@@ -20,13 +18,143 @@
         padding: 1rem 2rem;
         background: white;
       }
-
-      nav a {
-        text-decoration: none;
+      header nav a {
         margin-left: 1rem;
+        text-decoration: none;
         color: #0b3d3b;
         font-weight: 600;
       }
-
       .hero {
-        padding: 4re
+        padding: 4rem 2rem;
+        text-align: center;
+        background: linear-gradient(to right, #f6f9fc, #e5f3f9);
+      }
+      .hero h1 {
+        font-family: 'Merriweather', serif;
+        color: #0b3d3b;
+        font-size: 2.75rem;
+        margin-bottom: 1rem;
+      }
+      .hero p {
+        color: #4f6c7a;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+      .split {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        padding: 2rem;
+        background: white;
+        margin: 2rem auto;
+        max-width: 1000px;
+        border-radius: 8px;
+      }
+      .split img {
+        max-width: 100%;
+        border-radius: 10px;
+        flex: 1 1 40%;
+      }
+      .split .text {
+        flex: 1 1 55%;
+      }
+      .blog, .contact {
+        background: white;
+        padding: 2rem;
+        max-width: 1000px;
+        margin: 2rem auto;
+        border-radius: 8px;
+      }
+      .blog h2, .contact h2 {
+        font-family: 'Merriweather', serif;
+        color: #0b3d3b;
+      }
+      .blog article {
+        margin-bottom: 1.5rem;
+      }
+      .contact form {
+        display: flex;
+        flex-direction: column;
+      }
+      .contact input, .contact textarea {
+        margin-bottom: 1rem;
+        padding: 0.5rem;
+        font-family: 'Inter', sans-serif;
+      }
+      .contact button {
+        padding: 0.75rem;
+        background: #0b3d3b;
+        color: white;
+        border: none;
+        font-weight: bold;
+        cursor: pointer;
+      }
+      footer {
+        text-align: center;
+        padding: 2rem;
+        font-size: 0.9rem;
+        color: #7f8c8d;
+        background: #f8f9fa;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="logo-casomex.png" alt="CASOMEX Logo" height="50" />
+      <nav>
+        <a href="#">Inicio</a>
+        <a href="#quienes">Quiénes somos</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#blog">Blog</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h1>Impulsamos crédito responsable a escala</h1>
+      <p>En CASOMEX facilitamos alianzas con instituciones privadas para brindar soluciones de financiamiento eficientes, tecnológicas y humanas para sus beneficiarios.</p>
+    </section>
+
+    <section class="split" id="quienes">
+      <img src="familia.jpg" alt="Familia feliz">
+      <div class="text">
+        <h2>¿Quiénes somos?</h2>
+        <p>CASOMEX – Capital Social Mexicano es una empresa B2B especializada en operar programas de crédito con enfoque tecnológico, humano y responsable. Nuestra misión es maximizar el impacto positivo del financiamiento mediante procesos digitales, atención cercana y control riguroso del riesgo.</p>
+      </div>
+    </section>
+
+    <section class="split" id="servicios">
+      <div class="text">
+        <h2>Servicios</h2>
+        <p>Colaboramos con empresas y organizaciones para diseñar, operar y escalar soluciones de financiamiento accesibles para sus colaboradores, clientes o comunidades. Nuestro modelo combina tecnología, cumplimiento normativo y acompañamiento humano.</p>
+      </div>
+      <img src="asesoria.jpg" alt="Asesoría financiera">
+    </section>
+
+    <section class="blog" id="blog">
+      <h2>Blog</h2>
+      <article>
+        <h3>¿Por qué el crédito responsable es importante?</h3>
+        <p>El crédito bien implementado puede transformar vidas. Exploramos las claves para lograrlo con ética, tecnología y enfoque humano.</p>
+      </article>
+      <article>
+        <h3>Retos y oportunidades del financiamiento en México</h3>
+        <p>Analizamos las tendencias, desafíos y oportunidades que enfrenta el ecosistema financiero para poblaciones trabajadoras y jubiladas.</p>
+      </article>
+    </section>
+
+    <section class="contact" id="contacto">
+      <h2>Contáctanos</h2>
+      <form>
+        <input type="text" name="nombre" placeholder="Tu nombre" required />
+        <input type="email" name="email" placeholder="Tu correo electrónico" required />
+        <textarea name="mensaje" rows="5" placeholder="Tu mensaje" required></textarea>
+        <button type="submit">Enviar mensaje</button>
+      </form>
+    </section>
+
+    <footer>
+      &copy; 2025 CASOMEX – Capital Social Mexicano. Todos los derechos reservados.
+    </footer>
+  </body>
+</html>
