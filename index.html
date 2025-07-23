@@ -27,25 +27,29 @@
         color: #4f6c7a;
         max-width: 600px;
         margin: 0 auto;
-      }
-      .split {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 2rem;
-        padding: 2rem;
-        background: white;
-        margin: 2rem auto;
-        max-width: 1000px;
-        border-radius: 8px;
-      }
-      .split img {
-        max-width: 100%;
-        border-radius: 10px;
-        flex: 1 1 40%;
-      }
-      .split .text {
-        flex: 1 1 55%;
-      }
+     .split {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+  background: white;
+  margin: 2rem auto;
+  max-width: 1000px;
+  border-radius: 8px;
+  align-items: center;
+}
+
+.split img {
+  max-width: 100%;
+  border-radius: 10px;
+  flex: 1 1 40%;
+  object-fit: cover;
+  height: auto;
+}
+
+.split .text {
+  flex: 1 1 55%;
+}
       footer {
         text-align: center;
         padding: 2rem;
